@@ -1,0 +1,86 @@
+﻿<header class="main-header default">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-4 col-5">
+                <div class="logo-area default">
+                    <a href="#">
+                        <img src="~/images/logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-5 col-sm-8 col-7">
+                <div class="search-area default">
+                    <form action="" class="search">
+                        <input type="text" placeholder="نام کالا، برند و یا دسته مورد نظر خود را جستجو کنید…">
+                        <button type="submit"><img src="~/images/search.png" alt=""></button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <partial name="UserLoginDropdown" />
+                @await Component.InvokeAsync("CartDropdown")
+            </div>
+
+        </div>
+    </div>
+    <nav class="main-menu">
+        <div class="container">
+            <ul class="list float-right">
+                <li class="list-item list-item-has-children mega-menu mega-menu-col-5">
+                    <a class="nav-link" href="#">ژل و فیلر</a>
+                    <ul class="sub-menu nav">
+                        <li class="list-item list-item-has-children">
+                            <i class="now-ui-icons arrows-1_minimal-left"></i>
+                            <a class="main-list-item nav-link" href="#">ژل و فیلر تک سی سی</a>
+                            <ul class="sub-menu nav">
+                                <li class="list-item">
+                                    <a class="nav-link" href="#">کالا شماره یک</a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="nav-link" href="#">کالا شماره دو</a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="nav-link" href="#">کالا شماره سه</a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="nav-link" href="#">کالای شماره چهار</a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="nav-link" href="#">کالا شماره پنج</a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="nav-link" href="#">کالا شماره شش</a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="nav-link" href="#">کالای شماره هفت</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-item list-item-has-children">
+                            <i class="now-ui-icons arrows-1_minimal-left"></i>
+                            <a class="main-list-item nav-link" href="#">ژل و فیلر 10 سی سی</a>
+                            <ul class="sub-menu nav">
+                                <li class="list-item">
+                                    <a class="nav-link" href="#">کالا شماره یک</a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="nav-link" href="#">کالا شماره دو</a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="nav-link" href="#">کالا شماره سه</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <img src="~/images/1636.png" alt="">
+                    </ul>
+                </li>
+                <li class="list-item">
+                    <a class="nav-link" href="#">مزو ژل و جوان ساز</a>
+                </li>
+                <li class="list-item amazing-item">
+                    <a class="nav-link" href="#" target="_blank">شگفت‌انگیزها</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>

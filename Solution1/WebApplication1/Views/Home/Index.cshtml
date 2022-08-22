@@ -1,6 +1,20 @@
 ﻿@{ViewData["Title"] = "صفحه اصلی";}
 @section CSS{}
 
-<h1>test</h1>
+                <div class="row">
+                    <aside class="sidebar col-12 col-lg-3 order-2 order-lg-1">
+                        <div class="sidebar-inner default">
+                            <div class="widget-banner widget card">
+                            <div class="widget-banner widget card">
+                                <a href=http://ehsanghasimi.ir/ target="_blank">
+                                    <img class="img-fluid" src="assets/img/banner/1000001422.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </aside>
+                    @await Html.PartialAsync("MainSlider")
+                </div>
+
 
 @section Scripts{}
+
